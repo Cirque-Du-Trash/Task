@@ -1,0 +1,28 @@
+*{
+    text-align: center;
+}
+
+html{
+    background-color: grey;
+    font-size: 16px;
+}
+
+body{
+    width: 720px;
+    /* 너비에서 남는 여백 공통 분배*/
+    margin: auto;
+}
+
+h1{
+    font-size: 48px;
+}
+
+img{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+}
+
+p{
+    font-size: 1.25rem;
+}
