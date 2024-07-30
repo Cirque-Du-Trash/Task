@@ -1,9 +1,77 @@
-h2 {
-    font-weight: bold;
+h5 {
+    justify-content: center;
+    align-items: center;
 }
 
 .navbar {
     background-color: black!important; 
     color: white;
     padding: 10px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
   }
+
+  .container-fluid {
+    display: flex;
+    justify-content: center;
+  }
+
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+  }
+
+.custom-btn {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 14px;
+}
+
+.form-group {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.selector {
+    margin-left: 10px;
+    width: 120px;
+    height: 40px;
+}
+
+.gender-selector {
+    width: 80px;
+    height: 40px;
+}
+
+.form-control {
+    width: 250px;
+    height: 40px;
+}
+
+.btn-search {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    border-color: black;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px;
+}
+
+.date-time {
+    text-align: right;
+    align-items: center;
+    justify-content: center;
+}

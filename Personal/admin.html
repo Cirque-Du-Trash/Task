@@ -13,11 +13,42 @@
     <nav class="navbar bg-body-tertiary">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
-            <img src="fav_origin.jpg" alt="Logo" width="60" height="30" class="d-inline-block align-text-top">
+            <img src="logo_crop.jpg" alt="Logo" width="70" height="25" class="d-inline-block align-text-top">
           </a>
+          <a href="signup.html" class="btn custom-btn ms-auto">회원가입</a>
         </div>
       </nav>
-    <h2>신규 등록 상품</h2>
+   <div class="container">
+    <h5>신규 등록 상품</h5>
+    <div id="date-time" class="date-time"></div>
+   </div>
+   <div class="form-group">
+    <select class="selector">
+        <option value="카테고리">카테고리</option>
+        <option value="상의">상의</option>
+        <option value="하의">하의</option>
+        <option value="신발">신발</option>
+        <option value="패션잡화">패션잡화</option>
+    </select>
+    <select class="gender-selector">
+        <option value="성별">성별</option>
+        <option value="남성">남성</option>
+        <option value="여성">여성</option>
+        <option value="유니섹스">유니섹스</option>
+    </select>
+    <input type="text" class="form-control" 
+    id="productSearch" placeholder="제품명을 입력해주세요">
+    <button class="btn btn-search">조회</button>
+   </div>
+   <script>
+    const currentDate = new Date();
+    const formattedDate = 
+    `${currentDate.getFullYear()}-${currentDate.getMonth() + 1}
+    -${currentDate.getDate()} ${currentDate.getHours()}
+    :${currentDate.getMinutes()}:${currentDate.getSeconds()}`;
+  
+    document.getElementById('date-time').textContent = formattedDate;
+  </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
 </html>
