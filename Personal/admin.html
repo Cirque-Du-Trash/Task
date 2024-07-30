@@ -9,13 +9,14 @@
     <link rel="stylesheet" href="adstyle.css">
     <link rel="icon" href="fav144.png" type="image/x-icon">
   </head>
-  <body>
+  <body data-theme="light">
     <nav class="navbar bg-body-tertiary">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
             <img src="logo_crop.jpg" alt="Logo" width="70" height="25" class="d-inline-block align-text-top">
           </a>
-          <a href="signup.html" class="btn custom-btn ms-auto">회원가입</a>
+          <button class="btn btn-dark-mode" onclick="toggleDarkMode()">다크 모드</button>
+          <a href="signup.html" class="btn custom-btn">회원가입</a>
         </div>
       </nav>
    <div class="container">
@@ -101,6 +102,13 @@
 
                 populateTable(filteredData);
             }
+
+        function toggleDarkMode() {
+        const body = document.body;
+        const currentTheme = body.getAttribute('data-theme');
+        const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+        body.setAttribute('data-theme', newTheme);
+    }
 
     function updateDateTime() { 
         const currentDate = new Date();
