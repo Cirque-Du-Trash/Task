@@ -40,6 +40,19 @@
     id="productSearch" placeholder="제품명을 입력해주세요">
     <button class="btn btn-search">조회</button>
    </div>
+        <table class="table-sm">
+            <thead>
+            <tr>
+                <th>카테고리</th>
+                <th>브랜드</th>
+                <th>상품명</th>
+                <th>가격</th>
+            </tr>
+            </thead>
+            <tbody id="data-table">
+                <!--크롤링 데이터-->
+            </tbody>
+        </table>
    <script>
     const currentDate = new Date();
     const year = currentDate.getFullYear();
