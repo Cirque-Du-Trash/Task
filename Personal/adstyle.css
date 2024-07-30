@@ -1,6 +1,7 @@
 h5 {
     justify-content: center;
     align-items: center;
+    font-weight: bold!important;
 }
 
 .navbar {
@@ -32,7 +33,7 @@ h5 {
 }
 
 .form-group {
-    margin-top: 20px;
+    margin-top: 5px;
     display: flex;
     gap: 10px;
     align-items: center;
@@ -65,13 +66,14 @@ h5 {
 }
 
 .container {
+    margin-top: 10px;
     display: flex;
     justify-content: space-between;
-    padding: 10px 0px;
+    padding: 10px 10px;
+    max-width: 100%!important;
+    font-weight: bold!important;
 }
 
 .date-time {
     text-align: right;
-    align-items: center;
-    justify-content: center;
 }

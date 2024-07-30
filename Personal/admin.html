@@ -20,7 +20,7 @@
       </nav>
    <div class="container">
     <h5>신규 등록 상품</h5>
-    <div id="date-time" class="date-time"></div>
+    <div id="date-time" class="date-"></div>
    </div>
    <div class="form-group">
     <select class="selector">
@@ -42,10 +42,13 @@
    </div>
    <script>
     const currentDate = new Date();
-    const formattedDate = 
-    `${currentDate.getFullYear()}-${currentDate.getMonth() + 1}
-    -${currentDate.getDate()} ${currentDate.getHours()}
-    :${currentDate.getMinutes()}:${currentDate.getSeconds()}`;
+    const year = currentDate.getFullYear();
+    const month = currentDate.getMonth() + 1;
+    const day = currentDate.getDate();
+    const hours = currentDate.getHours();
+    const minutes = currentDate.getMinutes();
+    const seconds = currentDate.getSeconds();
+    const formattedDate = `${year}-${String(month).padStart(2, '0')}-${String(day).padStart(2, '0')} ${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
   
     document.getElementById('date-time').textContent = formattedDate;
   </script>
