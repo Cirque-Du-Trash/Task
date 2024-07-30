@@ -2,14 +2,8 @@ h2 {
     font-weight: bold;
 }
 
-.navbar .bg-body-tertiary {
+.navbar {
     background-color: black!important; 
-    color: white; /* 글자색을 흰색으로 설정 */
-    padding: 10px; /* 상하좌우 여백을 10px로 설정 */
-  }
-
-  nav {
-    background-color: black!important; /* 배경색을 검은색으로 설정 */
-    color: white; /* 글자색을 흰색으로 설정 */
-    padding: 10px; /* 상하좌우 여백을 10px로 설정 */
+    color: white;
+    padding: 10px; 
   }
