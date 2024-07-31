@@ -106,7 +106,7 @@ body[data-theme="light"] {
 }
 
 body[data-theme="dark"] {
-    background-color: black;
+    background-color: rgb(37, 37, 37);
     color: white;
 }
 
@@ -116,7 +116,7 @@ body[data-theme="light"] .table-sm {
 }
 
 body[data-theme="dark"] .table-sm {
-    background-color: #000000;
+    background-color: rgb(26, 26, 26);
     color: rgb(255, 255, 255);
 }
 
@@ -162,4 +162,16 @@ body[data-theme="dark"] th {
     font-weight: bold;
     text-align: center;
     border: 1px solid #000000;
+}
+
+body[data-theme="light"] .pagination {
+    --bs-pagination-active-bg: black;
+    --bs-pagination-active-color: white;
+    --bs-pagination-active-border-color: black;
+}
+
+body[data-theme="dark"] .pagination {
+    --bs-pagination-active-bg: rgb(187, 187, 187);
+    --bs-pagination-active-color: black;
+    --bs-pagination-active-border-color: rgb(187, 187, 187);
 }
