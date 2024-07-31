@@ -45,7 +45,7 @@
                 <option value="공용">공용</option>
             </select>
             <input type="text" class="form-control" id="productSearch" placeholder="제품명을 입력해주세요">
-            <button class="btn btn-search" onclick="searchProduct()">조회</button>
+            <button class="btn btn-search" id="search">조회</button>
         </div>
         <table class="table-sm">
             <thead>
@@ -67,6 +67,14 @@
             </ul>
         </nav>
         <script>
+            const searchBtn = document.getElementById("search");
+
+            searchBtn.addEventListener("click", function (e) {
+                e.preventDefault();
+                currentPageNumber = 1;
+                searchProduct();
+            });
+
             const data = [
                 { category: "상의", gender: "남성", brand: 'IAB Studio', product: 'Established T-Shirt White Black', price: '90,000' },
                 { category: "하의", gender: "여성", brand: 'Adidas', product: '(W)Adidas Firebird Shorts Black', price: '61,000' },
