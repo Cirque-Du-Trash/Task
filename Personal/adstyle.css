@@ -30,7 +30,8 @@ h5 {
     background-color: rgb(255, 255, 255);
     text-align: center;
     font-size: 14px;
-    margin-left: 20px;
+    margin-left: 10px;
+    margin-right: -17px;
     font-weight: bold!important;
 }
 
