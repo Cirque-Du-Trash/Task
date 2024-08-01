@@ -106,6 +106,7 @@
                 { category: "하의", gender: "공용", brand: 'Nike', product: 'Sportswear Club Fleece Shorts', price: '69,000' }
 
             ];
+            let filteredData = data;
 
             const itemsInOnePage = 7;
             let currentPageNumber = 1;
@@ -134,7 +135,7 @@
                 const categoryValue = document.getElementById('categorySelectPref').value;
                 const genderValue = document.getElementById('genderSelectPref').value;
 
-                const filteredData = data.filter(item => {
+                filteredData = data.filter(item => {
                     const matchesCategory = categoryValue === 'all' || item.category === categoryValue;
                     const matchesGender = genderValue === 'all' || item.gender === genderValue;
                     const matchesProduct = item.product.toLowerCase().includes(searchValue);
@@ -163,7 +164,8 @@
                     e.preventDefault();
                     if (currentPageNumber > 1) {
                         currentPageNumber = parseInt(currentPageNumber, 10) - 1;
-                        searchProduct();
+                        createTable(filteredData);
+                        createPage(filteredData.length);
                     }
                 });
                 prevBox.appendChild(prevBtn);
@@ -180,7 +182,8 @@
                     a.addEventListener('click', function (e) {
                         e.preventDefault();
                         currentPageNumber = i;
-                        searchProduct();
+                        createTable(filteredData);
+                        createPage(filteredData.length);
                     });
                     li.appendChild(a);
                     pagination.appendChild(li);
@@ -196,7 +199,8 @@
                     e.preventDefault();
                     if (currentPageNumber < totalPages) {
                         currentPageNumber = parseInt(currentPageNumber, 10) + 1;
-                        searchProduct(); 
+                        createTable(filteredData);
+                        createPage(filteredData.length);
                     }
                 });
                 nextBox.appendChild(nextBtn);
