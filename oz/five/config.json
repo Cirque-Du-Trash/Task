@@ -1,0 +1,67 @@
+{
+    "database": {
+      "username": "root",
+      "password": "root",
+      "host": "localhost",
+      "port": 3306,
+      "database_name": "airportdb"
+    },
+    "tables": {
+      "airline": {
+        "rows": 1000,
+        "mode": "replace"
+      },
+      "airplane": {
+        "rows": 2000,
+        "mode": "replace"
+      },
+      "airplane_type": {
+        "rows": 3000,
+        "mode": "replace"
+      },
+      "airport": {
+        "rows": 4000,
+        "mode": "replace"
+      },
+      "airport_geo": {
+        "rows": 5000,
+        "mode": "replace"
+      },
+      "airport_reachable": {
+        "rows": 6000,
+        "mode": "replace"
+      },
+      "booking": {
+        "rows": 7000,
+        "mode": "replace"
+      },
+      "employee": {
+        "rows": 8000,
+        "mode": "replace"
+      },
+      "flight": {
+        "rows": 9000,
+        "mode": "replace"
+      },
+      "flight_log": {
+        "rows": 10000,
+        "mode": "replace"
+      },
+      "flightschedule": {
+        "rows": 11000,
+        "mode": "replace"
+      },
+      "passenger": {
+        "rows": 12000,
+        "mode": "replace"
+      },
+      "passengerdetails": {
+        "rows": 13000,
+        "mode": "replace"
+      },
+      "weatherdata": {
+        "rows": 14000,
+        "mode": "replace"
+      }
+    }
+  }
